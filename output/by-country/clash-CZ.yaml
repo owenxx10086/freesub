@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 172.67.132.19
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/bDodLFtTQwCZ6EX3ffMYJ06j9EjLse4d?ed=2560
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 172.67.158.158
+  port: 443
+  udp: true
+  type: trojan
+  password: Siw3_iSte@ulOTO,-
+  sni: 4zgcCBcB10PQYIbnWMM4nvznJ4.rOyAEhmAn5.WorKers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/3BEU3jR06ZEdPc6FBekHFztK?ed=2560
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 95.182.94.186
   port: 443
   udp: true
@@ -16,18 +38,6 @@ proxies:
     public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
   servername: us04.mcloud.mov
   client-fingerprint: safari
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 95.85.230.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: de.oblaco.bet
-  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
