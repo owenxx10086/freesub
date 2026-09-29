@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "199.232.78.170",
+      "server": "199.232.78.101",
       "server_port": 443,
       "password": "mitivpn",
       "tls": {
@@ -23,7 +23,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "@mehrosabiran",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
           "Host": "mitivpn---de--s---mitivpn-11.global.ssl.fastly.net"
         }
