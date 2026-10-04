@@ -5,26 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "193.57.88.7",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "104.21.69.37",
       "server_port": 443,
-      "uuid": "8325bd97-b77c-4917-acaa-2446e9e8cc03",
+      "uuid": "911b84e1-d046-4fbf-bfc0-c168791115ef",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY",
-          "short_id": "79651ae525860543"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "haknewhpjmv"
+        "type": "ws",
+        "path": "/vl/uWq9DFRgj8BwQiSXmZ46",
+        "headers": {
+          "Host": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev"
+        }
       }
     },
     {
@@ -32,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
