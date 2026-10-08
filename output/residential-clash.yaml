@@ -21,21 +21,6 @@ proxies:
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  server: 147.45.42.73
-  port: 20443
-  udp: true
-  type: vless
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +28,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +35,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
